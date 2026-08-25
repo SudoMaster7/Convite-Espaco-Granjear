@@ -125,7 +125,7 @@
       radial-gradient(600px 260px at 50% -20%, rgba(255,255,255,.06), transparent 60%),
       linear-gradient(160deg, var(--forest-2), var(--forest-3));
     border-radius:28px;
-    padding:38px 24px 32px;
+    padding:18px 18px 30px;
     text-align:center;
     box-shadow:var(--shadow-soft);
     position:relative;
@@ -139,7 +139,18 @@
     border-radius:20px;
     pointer-events:none;
   }
-  .hero-logo{ display:block; width:clamp(140px, 38vw, 210px); height:auto; margin:0 auto 14px; filter:drop-shadow(0 6px 10px rgba(0,0,0,.25)); }
+  .hero-photo{
+    display:block;
+    width:100%;
+    max-width:480px;
+    aspect-ratio:1 / 1;
+    object-fit:cover;
+    object-position:center;
+    margin:0 auto 24px;
+    border:1px solid rgba(216,187,133,.55);
+    border-radius:18px;
+    box-shadow:0 14px 28px rgba(0,0,0,.24);
+  }
   .hero-word{
     margin:0;
     font-family:"Poppins",sans-serif;
@@ -163,7 +174,7 @@
     font-size:12.5px;
     letter-spacing:.02em;
     color:rgba(251,247,236,.78);
-    padding-top:10px;
+    padding-top:12px;
     border-top:1px solid rgba(216,187,133,.28);
     display:inline-block;
   }
@@ -361,7 +372,7 @@
   </header>
 
   <section class="hero-panel reveal">
-    <img class="hero-logo" src="logo.png" alt="Logo do Espaço Granjear">
+    <img class="hero-photo" src="frente-nova.jpeg" alt="Frente do Espaço Granjear">
     <p class="hero-word">espaço</p>
     <h2 class="hero-brand">GRANJEAR</h2>
     <p class="hero-tag">Clínica Multidisciplinar Especializada em Autismo</p>
@@ -421,7 +432,9 @@
   </section>
 
   <section class="heart-banner reveal">
-    <img class="hero-logo" src="logo.png" alt="Logo do Espaço Granjear">
+    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 20.5s-7.5-4.6-10-9.3C.4 7.8 2.2 4 6 4c2.1 0 3.6 1.1 4.3 2.6.3.6 1.1.6 1.4 0C12.4 5.1 13.9 4 16 4c3.8 0 5.6 3.8 4 7.2-2.5 4.7-10 9.3-10 9.3Z" stroke="#d9bb85" stroke-width="1.5"/>
+    </svg>
     <p>Venha conhecer nosso novo espaço, compartilhar bons momentos e celebrar conosco essa conquista! Sua presença é muito especial para nós.</p>
   </section>
 
