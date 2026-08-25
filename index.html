@@ -459,6 +459,7 @@
     var address = "Rua Décio de Oliveira Pedreira, 86, Xerém, Duque de Caxias - RJ";
     var start   = "20261004T150000";
     var end     = "20261004T170000";
+    var mapsAddress = "Espaço Granjear Vivian Bighi Psicopedagoga Janaina Moraes Fonoaudióloga, R. Décio de Oliveira, 86 - Xerém, Duque de Caxias - RJ, 25250-620";
 
     var calUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE"
       + "&text=" + encodeURIComponent(title)
@@ -467,7 +468,7 @@
       + "&location=" + encodeURIComponent(address)
       + "&ctz=America/Sao_Paulo";
 
-    var mapsUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+    var mapsUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(mapsAddress);
 
     document.getElementById("cardData").href = calUrl;
     document.getElementById("cardHorario").href = calUrl;
