@@ -557,6 +557,7 @@
     document.getElementById("cardEndereco").href = mapsUrl;
 
     var clinicWhatsApp = "5521966537491";
+    var janainaWhatsApp = "5521965761883";
     var rsvpButton = document.getElementById("btnConfirmarPresenca");
     var rsvpNameInput = document.getElementById("rsvpNome");
     if(rsvpButton){
@@ -565,7 +566,7 @@
         if(!personName){ personName = "Convidado(a)"; }
 
         var message = "Olá! Meu nome é " + personName + " e gostaria de confirmar minha presença na reinauguração do Espaço Granjear.";
-        rsvpButton.href = "https://wa.me/" + clinicWhatsApp + "?text=" + encodeURIComponent(message);
+        rsvpButton.href = "https://wa.me/" + janainaWhatsApp + "?text=" + encodeURIComponent(message);
       });
     }
   })();
